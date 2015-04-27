@@ -8,6 +8,8 @@ class Triangles
   define_method(:triangle_type) do
     if @side1 != @side2 && @side1 != @side3 && @side2 != @side3
       return "scaline"
+    elsif @side1 == @side2 && @side1 == @side3 && @side2 == @side3
+      return "equilateral"
     end
   end
 end
