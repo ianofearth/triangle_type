@@ -13,5 +13,9 @@ describe(:Triangles) do
       test_triangle = Triangles.new("1","1","1")
       expect(test_triangle.triangle_type()).to(eq("equilateral"))
     end
+    it("returns isosceles for a triangle with only 2 equal sides") do
+      test_triangle = Triangles.new("1", "1", "2")
+      expect(test_triangle.triangle_type()).to(eq("isosceles"))
+    end
   end
 end
