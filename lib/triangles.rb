@@ -10,6 +10,8 @@ class Triangles
       return "scaline"
     elsif @side1 == @side2 && @side1 == @side3 && @side2 == @side3
       return "equilateral"
+    else
+      return "isosceles"
     end
   end
 end
